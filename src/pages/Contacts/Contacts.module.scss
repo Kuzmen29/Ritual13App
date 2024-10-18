@@ -1,0 +1,22 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+
+    &__telephones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    &__addresses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    
+}

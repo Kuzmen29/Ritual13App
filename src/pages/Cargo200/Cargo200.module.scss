@@ -1,0 +1,12 @@
+.cargo200 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

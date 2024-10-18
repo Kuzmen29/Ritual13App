@@ -1,0 +1,29 @@
+@import url("./reset.scss");
+@import url('./font.scss');
+
+:root {
+    --main--color-gold : rgb(218, 165, 32);
+
+    // --main--color-brown : #520c17;
+    // --main--color-brown : #40080A;
+    --main--color-brown : rgb(103, 22, 45);
+}
+
+body {
+    font-family: "Intro", Times, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    color: var(--main--color-brown);
+}
+
+p {
+    width: 100%;
+    text-indent: 40px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}

@@ -1,0 +1,431 @@
+{
+    "telephones": [
+        {
+            "telephone": "8 (909) 324-37-77"
+        },
+        {
+            "telephone": "8 (952) 074-17-77"
+        }
+    ],
+    "addresses": [
+        {
+            "address": "г. Темников",
+            "fullAddress" : "г. Темников, Территория старого кладбища "
+        },
+        {
+            "address": "с. Теньгушево",
+            "fullAddress" : "с. Теньгушево ул. Ленина дом 134 А "
+        }
+    ],
+    "funeralGoods": [
+        {
+            "type": "Кресты",
+            "to": "crosses",
+            "poster": "/assets/images/crosses/poster.png"
+        },
+        {
+            "type": "Венки",
+            "to" : "wreaths",
+            "poster": "/assets/images/wreaths/poster.png"
+        },
+        {
+            "type": "Одежда",
+            "to" : "clothes",
+            "poster": "/assets/images/clothes/poster.png"
+        },
+        {
+            "type": "Гробы",
+            "to" : "coffins",
+            "poster": "/assets/images/coffins/poster.png"
+        },
+        {
+            "type": "Транспорт",
+            "to" : "transport",
+            "poster": "/assets/images/transport/poster.png"
+        },
+        {
+            "type": "Груз 200",
+            "to" : "cargo200",
+            "poster": "/assets/images/cargo200/poster.png"
+        }
+    ],
+    "crosses": [
+        {
+            "id": "cross_1",
+            "name": "Крест №1",
+            "link": "/assets/images/crosses/cross_1.jpg"
+        },
+        {
+            "id": "cross_2",
+            "name": "Крест №2",
+            "link": "/assets/images/crosses/cross_2.jpg"
+        },
+        {
+            "id": "cross_3",
+            "name": "Крест №3",
+            "link": "/assets/images/crosses/cross_3.jpg"
+        },
+        {
+            "id": "cross_4",
+            "name": "Крест №4",
+            "link": "/assets/images/crosses/cross_4.jpg"
+        },
+        {
+            "id": "cross_5",
+            "name": "Крест №5",
+            "link": "/assets/images/crosses/cross_5.jpg"
+        },
+        {
+            "id": "cross_6",
+            "name": "Крест №6",
+            "link": "/assets/images/crosses/cross_6.jpg"
+        },
+        {
+            "id": "cross_7",
+            "name": "Крест №7",
+            "link": "/assets/images/crosses/cross_7.jpg"
+        }
+    ],
+    "wreaths" : [
+        {
+            "id": "wreath_1",
+            "name" : "Венок №1",
+            "link": "/assets/images/wreaths/wreath_1.jpg"
+        },
+        {
+            "id": "wreath_2",
+            "name": "Венок №2",
+            "link": "/assets/images/wreaths/wreath_2.jpg"
+        },
+        {
+            "id": "wreath_3",
+            "name": "Венок №3",
+            "link": "/assets/images/wreaths/wreath_3.jpg"
+        },
+        {
+            "id": "wreath_4",
+            "name": "Венок №4",
+            "link": "/assets/images/wreaths/wreath_4.jpg"
+        },
+        {
+            "id": "wreath_5",
+            "name": "Венок №5",
+            "link": "/assets/images/wreaths/wreath_5.jpg"
+        },
+        {
+            "id": "wreath_6",
+            "name": "Венок №6",
+            "link": "/assets/images/wreaths/wreath_6.jpg"
+        },
+        {
+            "id": "wreath_7",
+            "name": "Венок №7",
+            "link": "/assets/images/wreaths/wreath_7.jpg"
+        },
+        {
+            "id": "wreath_8",
+            "name": "Венок №8",
+            "link": "/assets/images/wreaths/wreath_8.jpg"
+        },
+        {
+            "id": "wreath_9",
+            "name": "Венок №9",
+            "link": "/assets/images/wreaths/wreath_9.jpg"
+        },
+        {
+            "id": "wreath_10",
+            "name": "Венок №10",
+            "link": "/assets/images/wreaths/wreath_10.jpg"
+        },
+        {
+            "id": "wreath_11",
+            "name": "Венок №11",
+            "link": "/assets/images/wreaths/wreath_11.jpg"
+        },
+        {
+            "id": "wreath_12",
+            "name": "Венок №12",
+            "link": "/assets/images/wreaths/wreath_12.jpg"
+        },
+        {
+            "id": "wreath_13",
+            "name": "Венок №13",
+            "link": "/assets/images/wreaths/wreath_13.jpg"
+        },
+        {
+            "id": "basket_1",
+            "name": "Корзина №1",
+            "link": "/assets/images/wreaths/basket_1.jpg"
+        },
+        {
+            "id": "basket_2",
+            "name": "Корзина №2",
+            "link": "/assets/images/wreaths/basket_2.jpg"
+        },
+        {
+            "id": "basket_3",
+            "name": "Корзина №3",
+            "link": "/assets/images/wreaths/basket_3.jpg"
+        },
+        {
+            "id": "basket_4",
+            "name": "Корзина №4",
+            "link": "/assets/images/wreaths/basket_4.jpg"
+        },
+        {
+            "id": "basket_5",
+            "name": "Корзина №5",
+            "link": "/assets/images/wreaths/basket_5.jpg"
+        },
+        {
+            "id": "basket_6",
+            "name": "Корзина №6",
+            "link": "/assets/images/wreaths/basket_6.jpg"
+        },
+        {
+            "id": "basket_7",
+            "name": "Корзина №7",
+            "link": "/assets/images/wreaths/basket_7.jpg"
+        },
+        {
+            "id": "basket_8",
+            "name": "Корзина №8",
+            "link": "/assets/images/wreaths/basket_8.jpg"
+        },
+        {
+            "id": "basket_9",
+            "name": "Корзина №9",
+            "link": "/assets/images/wreaths/basket_9.jpg"
+        },
+        {
+            "id": "basket_10",
+            "name": "Корзина №10",
+            "link": "/assets/images/wreaths/basket_10.jpg"
+        },
+        {
+            "id": "basket_11",
+            "name": "Корзина №11",
+            "link": "/assets/images/wreaths/basket_11.jpg"
+        },
+        {
+            "id": "basket_wreath_1",
+            "name": "Венок-корзина №1",
+            "link": "/assets/images/wreaths/basket_wreath_1.jpg"
+        }
+    ],
+    "coffins" : [
+        {
+            "id": "coffin_1",
+            "name": "Гроб №1",
+            "link": "/assets/images/coffins/coffin_front_1.jpg",
+            "links" : [
+                "/assets/images/coffins/coffin_front_1.jpg",
+                "/assets/images/coffins/coffin_inside_1.jpg",
+                "/assets/images/coffins/coffin_sideways_1.jpg"
+            ]
+        },
+        {
+            "id": "coffin_2",
+            "name": "Гроб №2",
+            "link": "/assets/images/coffins/coffin_front_2.jpg",
+            "links" : [
+                "/assets/images/coffins/coffin_front_2.jpg",
+                "/assets/images/coffins/coffin_inside_2.jpg",
+                "/assets/images/coffins/coffin_sideways_2.jpg"
+            ]
+        },
+        {
+            "id": "coffin_3",
+            "name": "Гроб №3",
+            "link": "/assets/images/coffins/coffin_front_3.jpg",
+            "links" : [
+                "/assets/images/coffins/coffin_front_3.jpg",
+                "/assets/images/coffins/coffin_inside_3.jpg",
+                "/assets/images/coffins/coffin_sideways_3.jpg"
+            ]
+        },
+        {
+            "id": "coffin_4",
+            "name": "Гроб №4",
+            "link": "/assets/images/coffins/coffin_front_4.jpg",
+            "links" : [
+                "/assets/images/coffins/coffin_front_4.jpg",
+                "/assets/images/coffins/coffin_inside_4.jpg",
+                "/assets/images/coffins/coffin_sideways_4.jpg"
+            ]
+        },
+        {
+            "id": "coffin_5",
+            "name": "Гроб №5",
+            "link": "/assets/images/coffins/coffin_front_5.jpg",
+            "links" : [
+                "/assets/images/coffins/coffin_front_5.jpg",
+                "/assets/images/coffins/coffin_inside_5.jpg",
+                "/assets/images/coffins/coffin_sideways_5.jpg"
+            ]
+        },
+        {
+            "id": "coffin_6",
+            "name": "Гроб №6",
+            "link": "/assets/images/coffins/coffin_front_6.jpg",
+            "links" : [
+                "/assets/images/coffins/coffin_front_6.jpg",
+                "/assets/images/coffins/coffin_inside_6.jpg",
+                "/assets/images/coffins/coffin_sideways_6.jpg"
+            ]
+        },
+        {
+            "id": "coffin_7",
+            "name": "Гроб №7 (Элитный)",
+            "link": "/assets/images/coffins/coffin_elite_front_7.jpg",
+            "links" : [
+                "/assets/images/coffins/coffin_elite_front_7.jpg",
+                "/assets/images/coffins/coffin_elite_inside_7.jpg",
+                "/assets/images/coffins/coffin_elite_sideways_7.jpg"
+            ]
+        },
+        {
+            "id": "coffin_8",
+            "name": "Гроб №8 (Бархат)",
+            "link": "/assets/images/coffins/coffin_barhat_shelk_8.jpg"
+        },
+        {
+            "id": "coffin_9",
+            "name": "Гроб №9 (Бархат)",
+            "link": "/assets/images/coffins/coffin_barhat_shelk_9.jpg"
+        },
+        {
+            "id": "coffin_10",
+            "name": "Гроб №10 (Гофра Синяя)",
+            "link": "/assets/images/coffins/coffin_gofra_sinii_10.jpg"
+        },
+        {
+            "id": "coffin_11",
+            "name": "Гроб №11 (Плиз Бордовый)",
+            "link": "/assets/images/coffins/coffin_plise_bordo_11.jpg"
+        },
+        {
+            "id": "coffin_12",
+            "name": "Гроб №12 (Плиз Розовый)",
+            "link": "/assets/images/coffins/coffin_plise_rozov_12.jpg"
+        },
+        {
+            "id": "coffin_13",
+            "name": "Гроб №13 (Велюр Бордовый)",
+            "link": "/assets/images/coffins/coffin_velyur_bordo_13.jpg"
+        },
+        {
+            "id": "coffin_14",
+            "name": "Гроб №14 (Велюр Розовый)",
+            "link": "/assets/images/coffins/coffin_velyur_rozov_14.jpg"
+        },
+        {
+            "id": "coffin_15",
+            "name": "Гроб №15 (Детский)",
+            "link": "/assets/images/coffins/coffin_elite_front_7.jpg",
+            "links" : [
+                "/assets/images/coffins/coffin_baby_front_15.jpg",
+                "/assets/images/coffins/coffin_baby_sideways_15.jpg"
+            ]
+        }
+    ],
+    "clothes" : [
+        {
+            "id": "clothes_1",
+            "name": "Белье нательное мужское",
+            "link": "/assets/images/clothes/clothes_1.jpg"
+        },
+        {
+            "id": "clothes_2",
+            "name": "Белье нательное женское",
+            "link": "/assets/images/clothes/clothes_2.jpg"
+        },
+        {
+            "id": "clothes_3",
+            "name": "Чулки-носки",
+            "link": "/assets/images/clothes/clothes_3.jpg"
+        },
+        {
+            "id": "clothes_4",
+            "name": "Комплект одежды",
+            "link": "/assets/images/clothes/clothes_4.jpg"
+        },
+        {
+            "id": "clothes_5",
+            "name": "Костюм мужской",
+            "link": "/assets/images/clothes/clothes_5.jpg"
+        },
+        {
+            "id": "clothes_6",
+            "name": "Платье атласное голубое",
+            "link": "/assets/images/clothes/clothes_6.jpg"
+        },
+        {
+            "id": "clothes_7",
+            "name": "Платье атласное розовое",
+            "link": "/assets/images/clothes/clothes_7.jpg"
+        },
+        {
+            "id": "clothes_8",
+            "name": "Платье габардин",
+            "link": "/assets/images/clothes/clothes_8.jpg"
+        },
+        {
+            "id": "clothes_9",
+            "name": "Платье габардин цветок",
+            "link": "/assets/images/clothes/clothes_9.jpg"
+        },
+        {
+            "id": "clothes_10",
+            "name": "Платье габардин цветок голубое",
+            "link": "/assets/images/clothes/clothes_10.jpg"
+        },
+        {
+            "id": "clothes_11",
+            "name": "Платье ситцевое",
+            "link": "/assets/images/clothes/clothes_11.jpg"
+        },
+        {
+            "id": "clothes_12",
+            "name": "Платок головной",
+            "link": "/assets/images/clothes/clothes_12.jpg"
+        },
+        {
+            "id": "clothes_13",
+            "name": "Шарф-косынка",
+            "link": "/assets/images/clothes/clothes_13.jpg"
+        },
+        {
+            "id": "clothes_14",
+            "name": "Ритуальные тапки",
+            "link": "/assets/images/clothes/clothes_14.jpg"
+        }
+    ],
+    "transport" : [
+        {
+            "id": "transport_1",
+            "name": "",
+            "link": "/assets/images/transport/transport_1.jpg"
+        },
+        {
+            "id": "transport_2",
+            "name": "",
+            "link": "/assets/images/transport/transport_2.jpg"
+        },
+        {
+            "id": "transport_3",
+            "name": "",
+            "link": "/assets/images/transport/transport_3.jpg"
+        },
+        {
+            "id": "transport_4",
+            "name": "",
+            "link": "/assets/images/transport/transport_4.jpg"
+        },
+        {
+            "id": "transport_5",
+            "name": "",
+            "link": "/assets/images/transport/transport_5.jpg"
+        }
+    ]
+}

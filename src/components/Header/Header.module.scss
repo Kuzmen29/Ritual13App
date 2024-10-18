@@ -1,0 +1,144 @@
+.header {
+    position: relative;
+
+    padding: 20px 0 0 0;
+
+    border-top: 5px solid goldenrod;
+    border-bottom: 5px solid goldenrod;
+
+    background-image: url("./images/paradise__line.jpg");
+    background-repeat: repeat-x;
+
+    display: grid;
+    grid-template-areas:
+        "logo info"
+        "nav nav";
+    gap: 20px;
+
+    &__image {
+        width: 30rem;
+        position: absolute;
+
+        top: 0; /* position the top  edge of the element at the middle of the parent */
+        left: 50%; /* position the left edge of the element at the middle of the parent */
+
+        transform: translate(-50%, 0);
+        z-index: 0;
+    }
+}
+
+.logo {
+    grid-area: logo;
+
+    justify-self: end;
+
+    // background-image: url('./images/paradise__mini.jpg');
+    // background-size: 100% 100%;
+    // background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    &__title {
+        color: white;
+
+        text-shadow:
+            2px 2px 5px var(--main--color-gold),
+            -2px 2px 5px var(--main--color-gold),
+            2px -2px 5px var(--main--color-gold),
+            -2px -2px 5px var(--main--color-gold);
+
+        font-family: "Tsarevich", serif;
+        font-size: 5rem;
+        font-weight: bold;
+        letter-spacing: 10px;
+    }
+    &__sub-title {
+        color: var(--main--color-gold);
+
+        text-shadow:
+            1px 1px 1px var(--main--color-brown),
+            -1px 1px 1px var(--main--color-brown),
+            1px -1px 1px var(--main--color-brown),
+            -1px -1px 1px var(--main--color-brown);
+
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+    }
+}
+
+.info {
+    grid-area: info;
+
+    justify-self: start;
+
+    // background-image: url('./images/paradise__line.jpg');
+    // background-repeat:repeat-x;
+
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.telephones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__telephone {
+        padding: 10px 15px;
+
+        font-size: 1.5rem;
+
+        border: 2px solid var(--main--color-gold);
+        border-radius: 8px;
+        color: var(--main--color-brown);
+        background-color: white;
+    }
+}
+
+.addresses {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__address {
+        padding: 10px 15px;
+
+        font-size: 1.5rem;
+
+        border: 2px solid var(--main--color-gold);
+        border-radius: 8px;
+        color: var(--main--color-brown);
+        background-color: white;
+    }
+}
+
+.navigation {
+    grid-area: nav;
+
+    display: flex;
+    justify-content: center;
+
+    color: white;
+    background-color: #520c17;
+
+    font-size: 1.3rem;
+
+    &__link {
+        padding: 10px 10px;
+        border: 1px solid rgb(165, 42, 42, 0.5);
+
+        &:hover {
+            color: black;
+            background-color: white;
+
+            transition: color 0.2s ease-in, background-color 0.2s ease-in;
+        }
+    }
+}
