@@ -2,6 +2,8 @@ import React from 'react';
 import styles from "./Contacts.module.scss";
 import data from "@/assets/data/data.json";
 import Telephone from '@/components/Telephone/Telephone';
+import Paragraph from '@/components/Paragraph/Paragraph';
+import WeWillSupport from '@/components/WeWillSupport/WeWillSupport';
 
 
 export default function Contacts() {
@@ -20,6 +22,7 @@ export default function Contacts() {
                     ))
                 }
             </div>
+
             <div className={styles['contacts__addresses']}>
                 <h2>Адреса: </h2>
                 {
@@ -29,11 +32,11 @@ export default function Contacts() {
                 }
             </div>
 
-            <p>
+            <Paragraph>
                 В г. Темников предоставляется круглосуточная консультация и помощь в организации похорон.
-            </p>
+            </Paragraph>
 
-            <h3>Мы поможем Вам в любое время. Звоните круглосуточно!</h3>
+            <WeWillSupport/>
 
         </section>
     );

@@ -2,24 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-
-    & p {
-        width: 100%;
-        text-indent: 40px;
-    }
+    gap: 20px;
 
     &__contacts {
         padding: 5px 10px;
         border: 1px solid var(--main--color-brown) ;
         border-radius: 8px;
         color: var(--main--color-brown) !important;
-    }
-
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    
+    } 
 }

@@ -1,7 +1,7 @@
 .header {
     position: relative;
 
-    padding: 20px 0 0 0;
+    padding: 20px 0 20px 0;
 
     border-top: 5px solid goldenrod;
     border-bottom: 5px solid goldenrod;
@@ -9,11 +9,19 @@
     background-image: url("./images/paradise__line.jpg");
     background-repeat: repeat-x;
 
+    font-family: "Intro", serif;
+
     display: grid;
     grid-template-areas:
         "logo info"
         "nav nav";
     gap: 20px;
+
+    @media (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     &__image {
         width: 30rem;
@@ -99,6 +107,8 @@
         border-radius: 8px;
         color: var(--main--color-brown);
         background-color: white;
+
+        -webkit-tap-highlight-color: transparent;
     }
 }
 
@@ -116,29 +126,5 @@
         border-radius: 8px;
         color: var(--main--color-brown);
         background-color: white;
-    }
-}
-
-.navigation {
-    grid-area: nav;
-
-    display: flex;
-    justify-content: center;
-
-    color: white;
-    background-color: #520c17;
-
-    font-size: 1.3rem;
-
-    &__link {
-        padding: 10px 10px;
-        border: 1px solid rgb(165, 42, 42, 0.5);
-
-        &:hover {
-            color: black;
-            background-color: white;
-
-            transition: color 0.2s ease-in, background-color 0.2s ease-in;
-        }
     }
 }

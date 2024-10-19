@@ -1,4 +1,8 @@
 .productMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
     &__link {
         display: flex;
         flex-direction: column;

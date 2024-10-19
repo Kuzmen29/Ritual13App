@@ -12,30 +12,35 @@ import Coffins from './pages/Coffins/Coffins';
 import Clothes from './pages/Clothes/Clothes';
 import Transport from './pages/Transport/Transport';
 import Cargo200 from './pages/Cargo200/Cargo200';
+import styles from "./App.module.scss";
+import Navigation from './components/Navigation/Navigation';
 
 export default function App() {
 
     return (
-        <div>
+        <div className={styles['app']}>
+
             <Header />
 
-            <Container>
-                <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='/funeralGoods' element={<FuneralGoods />}>
-                        <Route path='crosses' element={<Crosses/>} />
-                        <Route path='wreaths' element={<Wreaths/>} />
-                        <Route path='coffins' element={<Coffins/>} />
-                        <Route path='clothes' element={<Clothes/>} />
-                        <Route path='transport' element={<Transport/>} />
-                        <Route path='cargo200' element={<Cargo200/>} />
-                    </Route>
-                    <Route path='/documents' element={<Documents />} />
-                    <Route path='/contacts' element={<Contacts />} />
-                </Routes>
-            </Container>
+            <Navigation />
 
-            
+            <main className={styles['app__main']}>
+                <Container>
+                    <Routes>
+                        <Route path='/' element={<Home />} />
+                        <Route path='/funeralGoods' element={<FuneralGoods />}>
+                            <Route path='crosses' element={<Crosses />} />
+                            <Route path='wreaths' element={<Wreaths />} />
+                            <Route path='coffins' element={<Coffins />} />
+                            <Route path='clothes' element={<Clothes />} />
+                            <Route path='transport' element={<Transport />} />
+                            <Route path='cargo200' element={<Cargo200 />} />
+                        </Route>
+                        <Route path='/documents' element={<Documents />} />
+                        <Route path='/contacts' element={<Contacts />} />
+                    </Routes>
+                </Container>
+            </main>
 
         </div>
     );

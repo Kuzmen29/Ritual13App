@@ -2,26 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 
-    &__group {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    &__telephone {
-        margin: 0 20px;
-
-        padding: 5px 10px;
-        border: 1px solid var(--main--color-brown);
-        border-radius: 8px;
-    }
-
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
 }

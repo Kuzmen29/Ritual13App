@@ -1,9 +1,7 @@
 import React from 'react';
 import styles from "./Header.module.scss";
-import { NavLink, useNavigate } from 'react-router-dom';
-
+import { useNavigate } from 'react-router-dom';
 import data from '@/assets/data/data.json';
-import { Menu, MenuItem } from '../UI/DropdownMenu/DropdownMenu';
 
 export default function Header() {
 
@@ -21,7 +19,7 @@ export default function Header() {
                 <div className={styles['telephones']}>
                     {
                         data.telephones.map(({ telephone }) => (
-                            <h2 className={styles['telephones__telephone']}>{telephone}</h2>
+                            <h2 className={styles['telephones__telephone']}><a href={'tel:'+telephone}>{telephone}</a></h2>
                         ))
                     }
                 </div>
@@ -35,21 +33,7 @@ export default function Header() {
                 </div>
             </div>
 
-            <nav className={styles['navigation']}>
-                <NavLink to={'/'} className={styles['navigation__link']}>
-                    Главная
-                </NavLink>
-                <NavLink to={'/funeralGoods'} className={styles['navigation__link']}>
-                    Ритуальные товары
-                </NavLink>
-                <NavLink to={'/documents'} className={styles['navigation__link']}>
-                    Документы
-                </NavLink>
-                <NavLink to={'/contacts'} className={styles['navigation__link']}>
-                    Контакты
-                </NavLink>
-
-            </nav>
+            
         </header>
     );
 }

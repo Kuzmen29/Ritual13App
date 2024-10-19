@@ -3,66 +3,73 @@ import styles from "./Crosses.module.scss";
 import data from "@/assets/data/data.json";
 import ProductCard from '@/components/ProductCard/ProductCard';
 import Telephone from '@/components/Telephone/Telephone';
+import ProductList from '@/components/ProductList/ProductList';
+import Paragraph from '@/components/Paragraph/Paragraph';
+import TelephonesList from '@/components/TelephonesList/TelephonesList';
+import WeWillSupport from '@/components/WeWillSupport/WeWillSupport';
+import AddressesList from '@/components/AddressesList/AddressesList';
+import Address from '@/components/Address/Address';
 
 export default function Crosses() {
 
 
     return (
         <section className={styles['crosses']}>
-            <p>
+            <Paragraph>
                 Крест - давняя традиция христианской веры. Принято считать, что крест символизирует вечную жизнь усопшего.
-            </p>
+            </Paragraph>
 
-            <p>
+            <Paragraph>
                 Место могилы – священное место. Для того, чтобы оградить место от чужих глаз на могилу обычно устанавливают оградку и крест (символ христианской веры).
-            </p>
+            </Paragraph>
 
-            <p>
-                Кресты на могилу от нашей ритуальной службы
-            </p>
-
-            <p>
+            <Paragraph>
                 Многие знают, что кресты на могилу должны быть восьмиконечными и иметь определенную форму. Крест обязательно устанавливают на могилу либо в ноги либо у изголовья усопшего.
-            </p>
+            </Paragraph>
 
-            <p>
-                Материалы используют разные: металл, камень, дерево (например, дубовый). Но следует знать, что в день похорон желательно установить на могилу деревянный крест. Эта мера предупредит просадку почвы. На него вешается табличка с именем и датой усопшего. В дальнейшем это поможет найти место захоронения среди остальных могил.
-            </p>
+            <Paragraph>
+                Материалы используют разные: металл, камень, дерево (например, дубовый). Но следует знать, что в день похорон желательно установить на могилу деревянный крест. Эта мера предупредит просадку почвы. На крест вешается табличка с именем и датой усопшего. В дальнейшем это поможет найти место захоронения среди остальных могил.
+            </Paragraph>
 
-            <p>
-                Со временем Вы уже можете решить, что лучше установить. Через год можно установить каменный крест или памятник.
-            </p>
+            <Paragraph>
+                Со временем Вы уже сможете решить, что лучше установить. Через год можно установить каменный крест или памятник.
+            </Paragraph>
 
-            <p>
+            <Paragraph>
                 Каждый крест покрывается специальным средством и лаком. Такая мера предотвратит гниение и затемнение. Лак продлит срок службы.
-            </p>
+            </Paragraph>
 
-            <p>
-                На Ваш выбор можно быстро заказать красивый металлический кованый крест, который будет дополнен различными орнаментами и узорами. В нашем Бюро Ритуальных Услуг низкая цена.
-            </p>
+            <Paragraph>
+                На Ваш выбор можно быстро заказать красивый металлический кованый крест, который будет дополнен различными орнаментами и узорами. Мы поможем Вам заказать все необходимое за оптимальные цены. Мы со всем сочувствием понимаем Ваше горе, поэтому всегда готовы пойти Вам навстречу.
+            </Paragraph>
 
-            <div className={styles['crosses__group']}>
+            <TelephonesList>
 
-                <h2>Крест на могилу по телефонам: </h2>
+                <h2>Заказывайте крест на могилу по телефонам: </h2>
 
                 {
                     data.telephones.map(item=>(
                         <Telephone telephone={item.telephone}/>
                     ))
                 }
-            </div>
+            </TelephonesList>
 
-            <p>
-                Наше ритуальное агентство лидер на рынке в г. Темников и с. Теньгушево. Мы поможем Вам заказать все необходимое за оптимальные цены. Мы со всем сочувствием понимаем Ваше горе, поэтому всегда готовы пойти Вам навстречу.
-            </p>
+            <AddressesList>
+                <h2>Или приходите к нам: </h2>
+                {
+                    data.addresses.map(item=>(
+                        <Address address={item.fullAddress}/>
+                    ))
+                }
+            </AddressesList>
 
-            <h2>Мы поддержим Вас в трудное время!</h2>
+            <WeWillSupport/>
 
-            <div className={styles['crosses__list']}>
+            <ProductList>
                 {
                     data.crosses.map(item => <ProductCard card={item} />)
                 }
-            </div>
+            </ProductList>
 
 
         </section>

@@ -8,5 +8,10 @@
         width: 20em;
         height: 30em;
         object-fit: contain;
+
+        @media (max-width:1000px) {
+            width: 15em;
+            height: 20em;
+        }
     }
 }

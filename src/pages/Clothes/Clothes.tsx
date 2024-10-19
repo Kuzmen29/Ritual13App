@@ -4,34 +4,40 @@ import ProductCard from '@/components/ProductCard/ProductCard';
 import data from "@/assets/data/data.json";
 import Address from '@/components/Address/Address';
 import Telephone from '@/components/Telephone/Telephone';
+import ProductList from '@/components/ProductList/ProductList';
+import Paragraph from '@/components/Paragraph/Paragraph';
+import TelephonesList from '@/components/TelephonesList/TelephonesList';
+import AddressesList from '@/components/AddressesList/AddressesList';
+import WeWillSupport from '@/components/WeWillSupport/WeWillSupport';
 
 export default function Clothes() {
 
 
     return (
         <section className={styles['clothes']}>
-            <p>
+            <Paragraph>
                 Процедура прощания (похороны) проходит только в новой ритуальной форме.
-            </p>
+            </Paragraph>
 
-            <p>
-                Одежда для усопших - одно из условий правильного прощания и ритуального захоронения
-            </p>
+            <Paragraph>
+                Одежда для усопших - одно из условий правильного прощания и ритуального захоронения.
+            </Paragraph>
 
-            <p>
-                Мы экономим Ваше время на несвоевременные ритуальные покупки.
-            </p>
+            <Paragraph>
+                Мы cэкономим Ваше время на несвоевременные ритуальные покупки.
+            </Paragraph>
 
-            <p>
+            <Paragraph>
                 Наше ритуальное агентство предлагает Вам широкий выбор одежды на похороны для усопших. Предлагаем ритуальную одежду всех размеров.
-            </p>
+            </Paragraph>
 
-            <p>
-                Одежда для прощания должна быть легкой, не стеснять тело, без различных узлов и молний. Одежда, представленная в ассортименте сайта Бюро Ритуальных Услуг, выполнена из натуральных и качественных материалов.
-            </p>
+            <Paragraph>
+                Одежда для прощания должна быть легкой, не стеснять тело, без различных узлов и молний. Одежда, представленная в ассортименте нашего ритуального агенства, выполнена из натуральных и качественных материалов.
+            </Paragraph>
 
-            <div>
-                <h2>Наш ассортимент одежды:</h2>
+
+            <Paragraph>Наш ассортимент одежды:</Paragraph>
+            <Paragraph>
                 <ul>
                     <li>Женские платья и костюмы;</li>
                     <li>Мужские костюмы;</li>
@@ -41,33 +47,35 @@ export default function Clothes() {
                     <li>Носки и чулки;</li>
                     <li>Ритуальные тапочки.</li>
                 </ul>
-            </div>
+            </Paragraph>
 
-            <p>
-                Чтобы правильно подобрать ритуальные вещи необходимы размеры и мерки усопшего. Если Вы затрудняетесь в определении размера, то наш ритуальный агент возьмет все необходимы мерки усопшего, чтобы Вам не пришлось потом повторно обменивать одежду.
-            </p>
 
-            <div>
-                <h2>Ритуальная службы находятся по адресам:</h2>
-                {
-                    data.addresses.map(item => <Address address={item.fullAddress}/>)
-                }
-            </div>
+            <Paragraph>
+                Чтобы правильно подобрать ритуальные вещи необходимы размеры и мерки усопшего. Если Вы затрудняетесь в определении размера, то наш ритуальный агент возьмет все необходимые мерки усопшего, чтобы Вам не пришлось потом повторно обменивать одежду.
+            </Paragraph>
 
-            <div>
+            <TelephonesList>
                 <h2>Информация по телефонам:</h2>
                 {
-                    data.telephones.map(item => <Telephone telephone={item.telephone}/>)
+                    data.telephones.map(item => <Telephone telephone={item.telephone} />)
                 }
-            </div>
+            </TelephonesList>
 
-            <h3>Мы поддержим Вас в трудное время!</h3>
-
-            <div className={styles['clothes__list']}>
+            <AddressesList>
+                <h2>Ритуальные службы находятся по адресам:</h2>
                 {
-                    data.clothes.map(item=><ProductCard card={item} />)
+                    data.addresses.map(item => <Address address={item.fullAddress} />)
                 }
-            </div>
+            </AddressesList>
+
+
+            <WeWillSupport />
+
+            <ProductList>
+                {
+                    data.clothes.map(item => <ProductCard card={item} />)
+                }
+            </ProductList>
 
         </section>
     );

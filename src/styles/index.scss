@@ -7,23 +7,18 @@
     // --main--color-brown : #520c17;
     // --main--color-brown : #40080A;
     --main--color-brown : rgb(103, 22, 45);
+
+    @media (max-width:1000px) {
+        font-size: 10px;
+    }
 }
 
 body {
-    font-family: "Intro", Times, serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+ //   font-family: "Intro", Times, serif;
+    font-family: "InterRegular", Times, serif;
 
     color: var(--main--color-brown);
 }
 
-p {
-    width: 100%;
-    text-indent: 40px;
-}
 
-.app {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
+
