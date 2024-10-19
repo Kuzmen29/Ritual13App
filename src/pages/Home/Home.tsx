@@ -16,7 +16,7 @@ export default function Home() {
             <h2>Ритуальные услуги</h2>
 
             <div className={styles['home__angels']}>
-                <img src={'/assets/images/home/home_image_1.jpg'} className={styles['home__angels-image']} alt="" />
+                <img src={'assets/images/home/home_image_1.jpg'} className={styles['home__angels-image']} alt="" />
 
                 <div className={styles['home__angels-text']}>
                     <Paragraph>
@@ -39,12 +39,12 @@ export default function Home() {
             <Paragraph>
                 В случае смерти человека, квалифицированные сотрудники проконсультируют Вас относительно порядка организации похорон. При необходимости, специалисты окажут помощь в проведении церемонии с учетом ваших пожеланий, а также согласно религиозным обычаям и обрядам.
             </Paragraph>
-            
+
             <Paragraph>
                 Наше ритуальное агентство предлагает оптимальные цены.
             </Paragraph>
 
-            <img src='/assets/images/home/home_image_2.jpg' alt="" />
+            <img src='assets/images/home/home_image_2.jpg' alt="" />
 
             <WeWillSupport/>
         </section>
