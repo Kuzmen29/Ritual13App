@@ -13,7 +13,7 @@ interface IPaths {
     index: string,
     output: string,
     public: string,
-    src : string
+    src: string
 }
 
 type Mode = 'development' | 'production';
@@ -31,7 +31,7 @@ export default function (env: IEnvVariables) {
         index: path.resolve(__dirname, 'src', 'index.tsx'),
         public: path.resolve(__dirname, 'public'),
         output: path.resolve(__dirname, 'build'),
-        src : path.resolve(__dirname, 'src'),
+        src: path.resolve(__dirname, 'src'),
     };
 
     const tsLoader = {
@@ -89,17 +89,15 @@ export default function (env: IEnvVariables) {
         )
     }
 
-    if (env.mode === 'production' || env.mode === 'development') {
-        plugins.push(
-            new CopyPlugin(
+    plugins.push(
+        new CopyPlugin(
             {
-                    patterns: [
-                        { from: path.resolve(__dirname, 'src', 'assets'), to: path.resolve(paths.output, 'assets')},
-                    ],
-                }
+                patterns: [
+                    { from: path.resolve(__dirname, 'src', 'assets'), to: path.resolve(paths.output, 'assets') },
+                ],
+            }
         )
-        )
-    }
+    )
 
     const config: webpack.Configuration = {
 
@@ -136,7 +134,7 @@ export default function (env: IEnvVariables) {
         resolve: {
             extensions: ['.tsx', '.ts', '.js'],
             alias: {
-                '@' : paths.src
+                '@': paths.src
             }
         }
 
