@@ -76,7 +76,7 @@ export default function (env: IEnvVariables) {
     const plugins: Configuration['plugins'] = [
         new HtmlWebpackPlugin({
             template: paths.html,
-            favicon: path.resolve(paths.public, 'favicon.ico')
+            favicon: path.resolve(__dirname, paths.public, 'favicon.ico')
         }),
     ]
 
@@ -94,8 +94,7 @@ export default function (env: IEnvVariables) {
             new CopyPlugin(
                 {
                     patterns: [
-                        { from: path.resolve(__dirname, 'src', 'assets'), to: path.resolve(paths.output, 'assets') },
-                        { from: path.resolve(paths.public), to: path.resolve(paths.output, 'public') },
+                        { from: path.resolve(__dirname, 'src', 'assets'), to: path.resolve(paths.output, 'assets') }
                     ],
                 }
             )
