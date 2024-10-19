@@ -44,7 +44,7 @@ export default function Home() {
                 Наше ритуальное агентство предлагает оптимальные цены.
             </Paragraph>
 
-            <img src='assets/images/home/home_image_2.jpg' alt="" />
+            <img src='/assets/images/home/home_image_2.jpg' alt="" />
 
             <WeWillSupport/>
         </section>
