@@ -95,6 +95,7 @@ export default function (env: IEnvVariables) {
                 {
                     patterns: [
                         { from: path.resolve(__dirname, 'src', 'assets'), to: path.resolve(paths.output, 'assets') },
+                        { from: path.resolve(paths.public), to: path.resolve(paths.output, 'public') },
                     ],
                 }
             )
