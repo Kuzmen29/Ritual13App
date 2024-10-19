@@ -89,17 +89,15 @@ export default function (env: IEnvVariables) {
         )
     }
 
-    if (env.mode === 'production' || env.mode === 'development') {
-        plugins.push(
-            new CopyPlugin(
-                {
-                    patterns: [
-                        { from: path.resolve(__dirname, 'src', 'assets'), to: path.resolve(paths.output, 'assets') }
-                    ],
-                }
-            )
+    plugins.push(
+        new CopyPlugin(
+            {
+                patterns: [
+                    { from: path.resolve(__dirname, 'src', 'assets'), to: path.resolve(paths.output, 'assets') }
+                ],
+            }
         )
-    }
+    )
 
     const config: webpack.Configuration = {
 
